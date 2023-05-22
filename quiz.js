@@ -1,31 +1,29 @@
 // // QUESTION 1
 var dict_1 = {
-  Question:
-    "My vertical line is:<br><h4>Not your height; we're looking for how tall you appear to be.<h4>",
-  AnswerA: "Long",
-  CaptionA: "People always think I'm taller than I really am.",
-  AnswerB: "Moderately long",
-  CaptionB: "People sometimes guess I'm slightly taller, but not by very much.",
-  AnswerC: "Moderate",
+  Question: "My vertical line is...<br><h4>How tall do you appear<h4>",
+  AnswerA: "Tall",
+  CaptionA: "People often think I'm taller than I really am",
+  AnswerB: "Moderately tall",
+  CaptionB: "People sometimes think I'm a little taller than I really am",
+  AnswerC: "Average",
   CaptionC:
-    "People usually guess my height correctly, or aren't at all surprised by it.",
-  AnswerD: "Smallish",
-  CaptionD:
-    "People usually guess I'm slightly smaller, and my curvy figure is more noticeable than my height.",
+    "People often guess my height correctly, or aren't at all surprised by it",
+  AnswerD: "Somewhat short",
+  CaptionD: "People often guess that I'm slightly shorter than I really am",
   AnswerE: "Petite",
-  CaptionE: "It's very obvious to everyone that I am small in stature.",
+  CaptionE: "It's very obvious that I have a petite build",
 };
 
 // QUESTION 2
 var dict_2 = {
-  Question: "The shape of my shoulders is best described as:",
-  AnswerA: "Narrow, sharp",
+  Question: "My shoulders are...",
+  AnswerA: "Narrow and sharp",
   CaptionA: "",
-  AnswerB: "Broad, blunt",
+  AnswerB: "Broad and blunt",
   CaptionB: "",
-  AnswerC: "Symmetrical, even",
+  AnswerC: "Symmetrical and even",
   CaptionC: "",
-  AnswerD: "Sloped, but tapered",
+  AnswerD: "Sloped but tapered",
   CaptionD: "",
   AnswerE: "Sloped and rounded",
   CaptionE: "",
@@ -33,28 +31,28 @@ var dict_2 = {
 
 // QUESTION 3
 var dict_3 = {
-  Question: "The length of my arms and legs is best described as:",
-  AnswerA: "Elongated, narrow",
-  CaptionA: "",
-  AnswerB: "Elongated, broad",
-  CaptionB: "",
+  Question: "My legs and arms are...",
+  AnswerA: "Long and narrow",
+  CaptionA: "Very long in proportion to my torso",
+  AnswerB: "Long and broad",
+  CaptionB: "Slightly long in proportion to my torso",
   AnswerC: "Moderate",
-  CaptionC: "In even proportion to my height and upper torso.",
-  AnswerD: "Small, slightly shortish",
-  CaptionD: "",
+  CaptionC: "Very proportional to my torso",
+  AnswerD: "Small",
+  CaptionD: "Slightly short in proportion to my torso",
   AnswerE: "Small",
-  CaptionE: "Very short in proportion to my height and upper torso.",
+  CaptionE: "Very short in proportion to my torso",
 };
 
 // QUESTION 4
 var dict_4 = {
-  Question: "The size and shape of my hands and feet are best described as:",
+  Question: "My hands and feet are...",
   AnswerA: "Long and narrow",
   CaptionA: "",
-  AnswerB: "Large and broad",
+  AnswerB: "Long and broad",
   CaptionB: "",
   AnswerC: "Moderate",
-  CaptionC: "Neither long, broad, delicate, nor small.",
+  CaptionC: "",
   AnswerD: "Small, narrow, delicate",
   CaptionD: "",
   AnswerE: "Small and slightly wide",
@@ -63,76 +61,75 @@ var dict_4 = {
 
 // QUESTION 5
 var dict_5 = {
-  Question: "The overall shape of my body is best described as:",
-  AnswerA: "Long, lean, sinewy",
-  CaptionA: "",
+  Question: "My body is...",
+  AnswerA: "Long and lean",
+  CaptionA: "Naturally tending toward an athletic build",
   AnswerB: "Broad",
   CaptionB: "Tending toward muscular",
   AnswerC: "Symmetrical",
   CaptionC: "Evenly proportioned",
-  AnswerD: "Very shapely",
+  AnswerD: "Shapely",
   CaptionD: "A delicate hourglass figure",
-  AnswerE: "Very soft, lushly curved",
-  CaptionE: "A ripe hourglass",
+  AnswerE: "Soft and curvy",
+  CaptionE: "A full hourglass figure",
 };
 
 // QUESTION 6
 var dict_6 = {
-  Question: "My bustline/torso is best described as:",
-  AnswerA: "Flat, taut",
-  CaptionA: "I never seem to add flesh here, even when I'm overweight.",
-  AnswerB: "Wide, broad",
+  Question: "My bustline/torso is...",
+  AnswerA: "Flat and taut",
+  CaptionA: "I never seem to add flesh here, even when I'm overweight",
+  AnswerB: "Wide and broad",
   CaptionB:
-    "I tend to add a little flesh here when overweight, but not too much.",
+    "I tend to add a little flesh here when overweight, but not too much",
   AnswerC: "Moderate",
-  CaptionC: "In even proportion to my waist and hips.",
-  AnswerD: "Shapely, curved",
+  CaptionC: "In even proportion to my waist and hips",
+  AnswerD: "Shapely and curved",
   CaptionD:
-    "More prominent than my waistline (my torso is slightly short, and I add flesh here when overweight.)",
+    "More prominent than my waistline (my torso is slightly short, and I add flesh here when overweight)",
   AnswerE: "Very prominent, lushly curved",
-  CaptionE: "Whether I'm thin or heavy, I'm always 'busty'.",
+  CaptionE: "Always busty, regardless of weight",
 };
 
 // QUESTION 7
 var dict_7 = {
-  Question: "My waistline is best described as:",
+  Question: "My waistline is...",
   AnswerA: "Elongated, but boyishly tapered",
-  CaptionA: "This is true even when I'm overweight.",
+  CaptionA: "This is true even when I'm overweight",
   AnswerB: "Elongated",
-  CaptionB:
-    "But tends to be very straight (if thin), or thick (if overweight.)",
+  CaptionB: "Tending towards very straight (if thin), or thick (if overweight)",
   AnswerC: "Moderate",
-  CaptionC: "Slightly defined, but not overly cinched.",
+  CaptionC: "Slightly defined, but not overly cinched",
   AnswerD: "Very small",
-  CaptionD: "In proportion to my bust and hips.",
+  CaptionD: "Small in proportion to my bust and hips",
   AnswerE: "Softly defined",
-  CaptionE: "But tends to be slightly wide.",
+  CaptionE: "Tending towards slightly wide",
 };
 
 // QUESTION 8
 var dict_8 = {
-  Question: "My hipline could be best described as:",
+  Question: "My hipline is...",
   AnswerA: "Tapered, straight, and boyishly narrow",
-  CaptionA: "However, I do thicken here when I'm overweight.",
+  CaptionA: "However, I do thicken here when I'm overweight",
   AnswerB: "Straight, slightly tapered, and slightly wide",
-  CaptionB: "Excess Weight always seems to collect at my hips.",
+  CaptionB: "Excess Weight always seems to collect at my hips",
   AnswerC: "Moderate",
-  CaptionC: "In even proportion to my bust and waistline.",
+  CaptionC: "In even proportion to my bust and waistline",
   AnswerD: "Shapely and rounded",
-  CaptionD: "More pronounced than my waistline.",
-  AnswerE: "Extremely soft and rounded",
-  CaptionE: "Regardless of my weight.",
+  CaptionD: "More pronounced than my waistline",
+  AnswerE: "Soft and rounded",
+  CaptionE: "Very pronounced, regardless of my weight",
 };
 
 // QUESTION 9
 var dict_9 = {
-  Question: "The flesh on my upper arms and thighs could be best described as:",
-  AnswerA: "Long, lithe, and sinewy",
+  Question: "My upper arm/thigh flesh is...",
+  AnswerA: "Long and willowy",
   CaptionA: "",
   AnswerB: "Elongated",
   CaptionB: "Tending toward muscular",
   AnswerC: "Moderate",
-  CaptionC: "Neither extremely soft nor extremely muscular or sinewy.",
+  CaptionC: "Neither extremely soft nor extremely muscular.",
   AnswerD: "Soft, slightly short",
   CaptionD: "",
   AnswerE: "Very soft",
@@ -141,42 +138,42 @@ var dict_9 = {
 
 // QUESTION 10
 var dict_10 = {
-  Question: "The shape of my jawline is best described as:",
+  Question: "The shape of my jawline is...",
   AnswerA: "Sharp",
-  CaptionA: "Either very pointed, very prominent, or very square.",
-  AnswerB: "Broad or blunt, slightly wide",
-  CaptionB: "",
-  AnswerC: "Moderate, symmetrical",
-  CaptionC: "Neither wide, sharp, nor rounded.",
-  AnswerD: "Delicate, tapered, or slightly narrow",
-  CaptionD: "",
-  AnswerE: "Rounded or softly wide",
-  CaptionE: "",
+  CaptionA: "Pointed, prominent, or square",
+  AnswerB: "Broad",
+  CaptionB: "Blunt or slightly wide",
+  AnswerC: "Symmetrical",
+  CaptionC: "Moderate - neither wide, sharp, nor rounded",
+  AnswerD: "Delicate",
+  CaptionD: "Tapered or slightly narrow",
+  AnswerE: "Rounded",
+  CaptionE: "Soft or gently wide",
 };
 
 // QUESTION 11
 var dict_11 = {
-  Question: "The shape of my nose is best described as:",
+  Question: "My nose is...",
   AnswerA: "Sharp or prominent",
   CaptionA: "",
   AnswerB: "Broad or blunt",
-  CaptionB: "But on the large side, possibly wide.",
+  CaptionB: "Pronounced, possibly wide",
   AnswerC: "Moderate, symmetrical",
-  CaptionC: "Neither overly large nor overly rounded.",
-  AnswerD: "Delicate, tapered, narrow",
-  CaptionD: "",
-  AnswerE: "Rounded, softly wide, but not large",
-  CaptionE: "",
+  CaptionC: "Neither overly large nor overly rounded",
+  AnswerD: "Delicate",
+  CaptionD: "Tapered and/or slightly narrow",
+  AnswerE: "Rounded",
+  CaptionE: "Softly wide, but not large",
 };
 
 // QUESTION 12
 var dict_12 = {
-  Question: "The shape of my cheekbones is best described as:",
-  AnswerA: "High, prominent",
+  Question: "My cheekbones are...",
+  AnswerA: "High and prominent",
   CaptionA: "",
   AnswerB: "Wide",
   CaptionB: "",
-  AnswerC: "Symmetrical, moderate",
+  AnswerC: "Symmetrical and moderate",
   CaptionC: "",
   AnswerD: "Delicate, narrow, slightly rounded",
   CaptionD: "",
@@ -186,45 +183,45 @@ var dict_12 = {
 
 // QUESTION 13
 var dict_13 = {
-  Question: "The shape of my eyes is best described as:",
-  AnswerA: "Narrow, straight, closely spaced, or almond-shaped",
-  CaptionA: "",
-  AnswerB: "Narrow, straight, widely spaced",
-  CaptionB: "",
+  Question: "My eyes are...",
+  AnswerA: "Narrow and closer together",
+  CaptionA: "Straight or almond-shaped",
+  AnswerB: "Narrow and more widely spaced",
+  CaptionB: "Straight or almond-shaped",
   AnswerC: "Evenly spaced and symmetrical",
   CaptionC: "Moderate in size",
   AnswerD: "Rounded, slightly close together",
-  CaptionD: "Possibly slightly almond-shaped or up-turned.",
+  CaptionD: "Possibly slightly almond-shaped or up-turned",
   AnswerE: "Very round and very large",
-  CaptionE: "",
+  CaptionE: "Large and luminous",
 };
 
 // QUESTION 14
 var dict_14 = {
-  Question: "The shape of my lips is best described as:",
-  AnswerA: "Straight, narrow",
-  CaptionA: "Sometimes descrived is thin-lipped.",
-  AnswerB: "Straight, strong",
+  Question: "My lips are...",
+  AnswerA: "Straight and narrow",
+  CaptionA: "Sometimes described as thin-lipped",
+  AnswerB: "Straight and strong",
   CaptionB: "Slightly broad, but not full",
-  AnswerC: "Moderate, evenly shaped",
-  CaptionC: "Neither straight nor overly full.",
-  AnswerD: "Slightly full and rounded",
-  CaptionD: "",
-  AnswerE: "Very full, rounded, and luscious",
-  CaptionE: "",
+  AnswerC: "Moderate",
+  CaptionC: "Evenly shaped - neither straight nor overly full",
+  AnswerD: "Slightly full",
+  CaptionD: "Slightly rounded",
+  AnswerE: "Very full",
+  CaptionE: "Very rounded and luscious",
 };
 
 // QUESTION 15
 var dict_15 = {
-  Question: "The flesh on my cheekbones could be best described as:",
+  Question: "My cheekbone flesh is...",
   AnswerA: "Taut and flat",
-  CaptionA: "Even when overweight.",
+  CaptionA: "Regardless of weight",
   AnswerB: "Fairly taut",
-  CaptionB: "But I do tend to get a little 'puffy' when I put on weight.",
-  AnswerC: "Moderate, soft, but not puffy",
-  CaptionC: "",
-  AnswerD: "Softy and fleshy",
-  CaptionD: "May get extremely full with excess weight.",
+  CaptionB: "But I do tend to get a little 'puffy' when I put on weight",
+  AnswerC: "Moderate",
+  CaptionC: "Soft, but not puffy",
+  AnswerD: "Soft and fleshy",
+  CaptionD: "May get extremely full with excess weight",
   AnswerE: "Very soft, very fleshy, very round",
   CaptionE: "Even when I'm at my thinnest.",
 };
@@ -232,16 +229,16 @@ var dict_15 = {
 // QUESTION 16
 var dict_16 = {
   Question: "My hair is...",
-  AnswerA: "Extremely finely textured",
-  CaptionA: "Silky-smooth, either straight or with a slight bend.",
+  AnswerA: "Finely textured",
+  CaptionA: "Silky-smooth, either straight or with a slight bend",
   AnswerB: "Strongly textured",
-  CaptionB: "Coarse, heavy, either thick and straight or wavy/curly.",
+  CaptionB: "Coarse, heavy, either thick and straight or wavy/curly",
   AnswerC: "Moderate texture",
-  CaptionC: "Slightly wavy or with a bend.",
-  AnswerD: "Moderately thick",
-  CaptionD: "With a bend, wave, or curl.",
-  AnswerE: "Extremely thick",
-  CaptionE: "Lots of wave or curl (with a soft surface.)",
+  CaptionC: "Slightly wavy or with a bend",
+  AnswerD: "Somewhat thick",
+  CaptionD: "With a bend, wave, or curl",
+  AnswerE: "Very thick",
+  CaptionE: "Soft with lots of wave or curl",
 };
 
 const question_dicts_arr = [
@@ -824,8 +821,10 @@ function createBarChart(results_data) {
     type: "bar",
     data: data,
     options: {
-      legend: {
-        display: false,
+      plugins: {
+        legend: {
+          display: false,
+        },
       },
       tooltips: {
         callbacks: {
@@ -910,6 +909,11 @@ function createBarChart2(results_raw_array) {
     data,
     options: {
       indexAxis: "y",
+      plugins: {
+        legend: {
+          display: false,
+        },
+      },
     },
   };
   const myChart2 = new Chart(document.getElementById("myBarChart2"), config);
