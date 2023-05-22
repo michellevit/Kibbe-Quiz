@@ -243,7 +243,7 @@ var dict_16 = {
   AnswerE: "Extremely thick",
   CaptionE: "Lots of wave or curl (with a soft surface.)",
 };
-	
+
 const question_dicts_arr = [
   dict_1,
   dict_2,
@@ -314,7 +314,6 @@ function startQuiz() {
   askQuestions(i);
 }
 
-
 function askQuestions() {
   console.log("You have entered the askQuestions Function");
   console.log("We are now at QUESTION " + (i + 1));
@@ -376,8 +375,6 @@ function askQuestions() {
   }
 }
 
-	
-
 function recordAnswer(clicked_id) {
   console.log("You have entered the recordAnswer Function");
   console.log("User Clicked: " + clicked_id);
@@ -432,7 +429,6 @@ function backButtonPressed() {
   }
 }
 
-
 function prepResultsPage() {
   console.log("You have entered the prepResultsPage Function");
   document
@@ -459,7 +455,9 @@ function prepResultsPage() {
   }
   back_button.style.setProperty("display", "none", "important");
   progress_bar.style.setProperty("display", "none", "important");
-	document.getElementById("learn_more").style.setProperty("display", "block", "important");
+  // document
+  //   .getElementById("learn_more")
+  //   .style.setProperty("display", "block", "important");
   console.clear();
   for (let p = 1; p < 17; p++) {
     console.log(p + ": " + answer_dict[p]);
@@ -500,11 +498,12 @@ function prepResultsPage() {
     D: D_answers,
     E: E_answers,
   };
-  sortAnswers(results_dict);
+  results_raw_array = [A_answers, B_answers, C_answers, D_answers, E_answers];
+  sortAnswers(results_dict, results_raw_array);
   // addRetakeQuizButton();
 }
 
-function sortAnswers(results_dict) {
+function sortAnswers(results_dict, results_raw_array) {
   var dramatic_result = calculateDramatic(results_dict);
   var soft_dramatic_result = calculateSoftDramatic(results_dict);
   var flamboyant_natural_result = calculateFlamboyantNatural(results_dict);
@@ -536,6 +535,7 @@ function sortAnswers(results_dict) {
   ];
   createBarChart(results_data);
   createPieChart(yinYang);
+  createBarChart2(results_raw_array);
 }
 
 // function addRetakeQuizButton() {
@@ -872,4 +872,45 @@ function createPieChart(yinYang) {
     },
   };
   const myPieChart = new Chart(document.getElementById("myPieChart"), config);
+}
+
+function createBarChart2(results_raw_array) {
+  const labels = [
+    "A Answers",
+    "B Answers",
+    "C Answers",
+    "D Answers",
+    "E Answers",
+  ];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+        backgroundColor: [
+          "rgba(170, 201, 206, 1)",
+          "rgba(182, 180, 194, 1)",
+          "rgba(201, 187, 200, 1)",
+          "rgba(218, 195, 218, 1)",
+          "rgba(232, 183, 212, 1)",
+        ],
+        borderColor: [
+          "rgba(170, 201, 206, 1)",
+          "rgba(182, 180, 194, 1)",
+          "rgba(201, 187, 200, 1)",
+          "rgba(218, 195, 218, 1)",
+          "rgba(232, 183, 212, 1)",
+        ],
+        borderWidth: 1,
+        data: results_raw_array,
+      },
+    ],
+  };
+  const config = {
+    type: "bar",
+    data,
+    options: {
+      indexAxis: "y",
+    },
+  };
+  const myChart2 = new Chart(document.getElementById("myBarChart2"), config);
 }
