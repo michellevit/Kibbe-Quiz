@@ -148,13 +148,18 @@ button > .caption {
 
 
 #myBarChart {
-    padding: 25px 0 !important;
-    margin: auto !important;
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 #myPieChart {
-    padding: 25px 0 !important;
+    padding: 0 !important;
     margin: auto !important;
+}
+
+#myBarChart2 {
+    padding: 0 !important;
+    margin: 0 !important;
 }
 
 @media only screen and (max-width: 615px) {

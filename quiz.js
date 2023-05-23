@@ -434,7 +434,9 @@ function prepResultsPage() {
   document.getElementById("appTitle").innerHTML = "Results";
   document
     .getElementById("chartBox")
-    .style.setProperty("display", "block", "important");
+    .style.setProperty("display", "flex", "important");
+  document.getElementById("chartBox").style.flexDirection = "column";
+  document.getElementById("chartBox").style.justifyContent = "center";
   const buttonBreaks = document.querySelectorAll(".buttonBreak");
   buttonBreaks.forEach((buttonBreak) => {
     buttonBreak.remove();
