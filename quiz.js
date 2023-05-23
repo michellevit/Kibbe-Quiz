@@ -834,13 +834,11 @@ function createBarChart(results_data) {
         },
       },
       scales: {
-        yAxes: [
-          {
-            ticks: {
-              beginAtZero: true,
-            },
-          },
-        ],
+        indexAxis: "x",
+        y: {
+          beginAtZero: true,
+          max: 100,
+        },
       },
     },
   };
@@ -912,6 +910,15 @@ function createBarChart2(results_raw_array) {
       plugins: {
         legend: {
           display: false,
+        },
+      },
+      scales: {
+        x: {
+          beginAtZero: true, // Start the x-axis at zero
+          ticks: {
+            stepSize: 1, // Set the step size to 1 to display every single number
+          },
+          max: 16, // Set the maximum value on the x-axis
         },
       },
     },
