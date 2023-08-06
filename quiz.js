@@ -779,7 +779,7 @@ function giveInconclusiveResults() {
   const inconclusiveResultsDiv = document.createElement("div");
   inconclusiveResultsDiv.className = "inconclusive-text";
   inconclusiveResultsDiv.textContent =
-    "Unfortunately, your answers did not provide a clear indication of your type - however, below you can see your yin/yang results, and your raw results. Hopefully you can use this data as a starting point for learning more about your body type.";
+    "Unfortunately, your answers did not provide a clear indication of your type - however, below you can see your yin/yang results and your raw results. Hopefully you can use this data as a starting point for learning more about your body type.";
   canvasToReplace.parentNode.replaceChild(
     inconclusiveResultsDiv,
     canvasToReplace
