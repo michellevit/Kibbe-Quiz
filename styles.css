@@ -162,6 +162,22 @@ button > .caption {
     margin: 0 !important;
 }
 
+.inconclusive-text {
+    width: 525px;
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+    margin-top:  50px;
+    margin-bottom: 75px;
+    word-break: break-word;
+    white-space:normal;
+    letter-spacing: 2px;
+}
+
+
+
 @media only screen and (max-width: 615px) {
     #quiz button {
         padding-left: 0vw !important;
