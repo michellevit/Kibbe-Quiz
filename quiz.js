@@ -532,7 +532,17 @@ function sortAnswers(results_dict, results_raw_array) {
     theatrical_romantic_result,
     romantic_result,
   ];
-  createBarChart(results_data);
+    var all_zero = true;
+  for (let i = 0; i < results_data.length; i++) {
+    if (results_data[i] != 0) {
+      var all_zero = false;
+    }
+  }
+  if (all_zero == false) {
+    createBarChart(results_data);
+  } else {
+    giveInconclusiveResults();
+  }
   createPieChart(yinYang);
   createBarChart2(results_raw_array);
 }
@@ -763,6 +773,19 @@ function calculateYinYang(results_dict) {
   const yinYang = [yin_result, yang_result];
   return yinYang;
 }
+
+function giveInconclusiveResults() {
+  const canvasToReplace = document.getElementById("myBarChart");
+  const inconclusiveResultsDiv = document.createElement("div");
+  inconclusiveResultsDiv.className = "inconclusive-text";
+  inconclusiveResultsDiv.textContent =
+    "Unfortunately, your answers did not provide a clear indication of your type - however, below you can see your yin/yang results, and your raw results. Hopefully you can use this data as a starting point for learning more about your body type.";
+  canvasToReplace.parentNode.replaceChild(
+    inconclusiveResultsDiv,
+    canvasToReplace
+  );
+}
+
 
 function createBarChart(results_data) {
   const labels = [
