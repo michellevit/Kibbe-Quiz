@@ -588,7 +588,6 @@ function calculateSoftDramatic(results_dict) {
   var E = results_dict["E"];
   var soft_dramatic_result = 0;
   if (A > B && A > C && A > D && A > E && E > 2) {
-    console.log("true");
     soft_dramatic_result = A + E;
   }
   soft_dramatic_result = soft_dramatic_result * 6.25;
@@ -604,7 +603,6 @@ function calculateFlamboyantNatural(results_dict) {
   var E = results_dict["E"];
   var flamboyant_natural_result = 0;
   if (B > A && B > C && B > D && B > E && A > 2) {
-    console.log("true");
     flamboyant_natural_result = B + A;
   }
   flamboyant_natural_result = flamboyant_natural_result * 6.25;
@@ -725,7 +723,7 @@ function calculateSoftGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var soft_gamine_result = 0;
-  if ((A > 2 && E > 2 && A - E < 3) || (E - A < 3 && D > 2)) {
+  if (A > 2 && E > 2 && A - E < 3 && D > 2 && D < A) {
     soft_gamine_result = A + E + D;
   }
   soft_gamine_result = soft_gamine_result * 6.25;
