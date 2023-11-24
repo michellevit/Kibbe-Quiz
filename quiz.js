@@ -699,7 +699,7 @@ function calculateSoftGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var soft_gamine_result = 0;
-  if (A >= 2 && E >= 2 && (abs(A - E) <= 3) && D >= 3 && (A + E) > D {
+  if (A >= 2 && E >= 2 && (abs(A - E) <= 3) && D >= 3 && (A + E) > D) {
     soft_gamine_result = A + E + D;
   }
   soft_gamine_result = soft_gamine_result * 6.25;
