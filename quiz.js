@@ -373,11 +373,9 @@ function recordAnswer(clicked_id) {
   if (i == 15) {
     i++;
     answer_dict[i] = clicked_id;
-    console.log("You have reached the last question, time for the results!");
     prepResultsPage();
   } else {
     i++;
-    console.log("i = " + i);
     answer_dict[i] = clicked_id;
     for (let p = 1; p < 17; p++) {
       console.log(p + ": " + answer_dict[p]);
@@ -398,7 +396,6 @@ function moveProgress() {
 function backButtonPressed() {
   // If back button was pressed on Question 1, return to start
   if (i == 0) {
-    console.log("Back button was pressed on Question 1, so return to start");
     start_button.style.setProperty("display", "inline", "important");
     question.style.setProperty("display", "none", "important");
     for (let x = 0; x < 5; x++) {
@@ -407,16 +404,10 @@ function backButtonPressed() {
     back_button.style.setProperty("display", "none", "important");
     progress_bar.style.setProperty("display", "none", "important");
   } else {
-    console.log(
-      "Back button was pressed on Question 2-16, so remove last answer"
-    );
     answer_dict[i] = "";
     i--;
     askQuestions();
     moveProgress();
-  }
-  for (let p = 1; p < 17; p++) {
-    console.log(p + ": " + answer_dict[p]);
   }
 }
 
@@ -450,10 +441,6 @@ function prepResultsPage() {
   // document
   //   .getElementById("learn_more")
   //   .style.setProperty("display", "block", "important");
-  console.clear();
-  for (let p = 1; p < 17; p++) {
-    console.log(p + ": " + answer_dict[p]);
-  }
   var A_answers = 0;
   var B_answers = 0;
   var C_answers = 0;
