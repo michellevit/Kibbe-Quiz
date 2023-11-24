@@ -1,4 +1,4 @@
-// // QUESTION 1
+// QUESTION 1
 var dict_1 = {
   Question: "My vertical line is...<br><h4>How tall do you appear<h4>",
   AnswerA: "Tall",
