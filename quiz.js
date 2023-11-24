@@ -467,11 +467,6 @@ function prepResultsPage() {
         break;
     }
   }
-  console.log("A Answers: " + A_answers);
-  console.log("B Answers: " + B_answers);
-  console.log("C Answers: " + C_answers);
-  console.log("D Answers: " + D_answers);
-  console.log("E Answers: " + E_answers);
   results_dict = {
     A: A_answers,
     B: B_answers,
