@@ -692,7 +692,7 @@ function calculateFlamboyantGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var flamboyant_gamine_result = 0;
-  if ((A > 2 && E > 2 && A - E < 3 && B > 2) || E - A < 3) {
+  if ((A > 2 && E > 2 && A - E < 3 && B > 2) && E - A < 3) {
     flamboyant_gamine_result = A + E + B;
   }
   var flamboyant_gamine_result = flamboyant_gamine_result * 6.25;
