@@ -681,7 +681,7 @@ function calculateFlamboyantGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var flamboyant_gamine_result = 0;
-  if (A >= 2 && E >= 2 && (customAbs(A - E) <= 1) && B >= 3) {
+  if (A >= 3 && E >= 3 && (customAbs(A - E) <= 1) && B >= 3) {
     flamboyant_gamine_result = A + E + B;
   }
   var flamboyant_gamine_result = flamboyant_gamine_result * 6.25;
@@ -708,7 +708,7 @@ function calculateSoftGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var soft_gamine_result = 0;
-  if (A >= 2 && E >= 2 && (customAbs(A - E) <= 3) && D >= 3 && (A + E) > D) {
+  if (A >= 3 && E >= 3 && (customAbs(A - E) <= 3) && D >= 3 && (A + E) > D) {
     soft_gamine_result = A + E + D;
   }
   soft_gamine_result = soft_gamine_result * 6.25;
