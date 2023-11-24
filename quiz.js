@@ -714,7 +714,7 @@ function calculateTheatricalRomantic(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var theatrical_romantic_result = 0;
-  if (E + D > A && E + D > B && E + D > C && A > 2) {
+  if (E + D > A && E + D > B && E + D > C && A >= 3) {
     theatrical_romantic_result = E + D + A;
   }
   theatrical_romantic_result = theatrical_romantic_result * 6.25;
