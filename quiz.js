@@ -283,7 +283,6 @@ const answer_dict = {
 // QUIZ ALGORITHM
 
 function startQuiz() {
-  console.log("You have entered the startQuiz Function");
   start_button = document.getElementById("start");
   section_heading = document.getElementsByTagName("h1")[0].innerHTML;
   question = document.getElementById("question");
@@ -312,8 +311,6 @@ function startQuiz() {
 }
 
 function askQuestions() {
-  console.log("You have entered the askQuestions Function");
-  console.log("We are now at QUESTION " + (i + 1));
   document
     .getElementById("appTitle")
     .style.setProperty("display", "none", "important");
@@ -373,8 +370,6 @@ function askQuestions() {
 }
 
 function recordAnswer(clicked_id) {
-  console.log("You have entered the recordAnswer Function");
-  console.log("User Clicked: " + clicked_id);
   if (i == 15) {
     i++;
     answer_dict[i] = clicked_id;
@@ -401,7 +396,6 @@ function moveProgress() {
 }
 
 function backButtonPressed() {
-  console.log("You have entered the backButtonPressed Function");
   // If back button was pressed on Question 1, return to start
   if (i == 0) {
     console.log("Back button was pressed on Question 1, so return to start");
@@ -427,7 +421,6 @@ function backButtonPressed() {
 }
 
 function prepResultsPage() {
-  console.log("You have entered the prepResultsPage Function");
   document
     .getElementById("appTitle")
     .style.setProperty("display", "inline-block", "important");
