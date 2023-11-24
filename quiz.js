@@ -379,9 +379,6 @@ function recordAnswer(clicked_id) {
   } else {
     i++;
     answer_dict[i] = clicked_id;
-    for (let p = 1; p < 17; p++) {
-      console.log(p + ": " + answer_dict[p]);
-    }
     askQuestions();
     moveProgress();
   }
