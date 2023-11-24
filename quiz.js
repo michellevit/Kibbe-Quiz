@@ -280,6 +280,8 @@ const answer_dict = {
   16: "",
 };
 
+
+
 // QUIZ ALGORITHM
 
 function startQuiz() {
@@ -544,6 +546,13 @@ function sortAnswers(results_dict, results_raw_array) {
 //   };
 // }
 
+function customAbs(number) {
+  if (number < 0) {
+    return -number;
+  }
+  return number;
+}
+
 // DRAMATIC: most answers A
 function calculateDramatic(results_dict) {
   var A = results_dict["A"];
@@ -672,7 +681,7 @@ function calculateFlamboyantGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var flamboyant_gamine_result = 0;
-  if (A >= 2 && E >= 2 && (abs(A - E) <= 1) && B >= 3) {
+  if (A >= 2 && E >= 2 && (customAbs(A - E) <= 1) && B >= 3) {
     flamboyant_gamine_result = A + E + B;
   }
   var flamboyant_gamine_result = flamboyant_gamine_result * 6.25;
@@ -699,7 +708,7 @@ function calculateSoftGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var soft_gamine_result = 0;
-  if (A >= 2 && E >= 2 && (abs(A - E) <= 3) && D >= 3 && (A + E) > D) {
+  if (A >= 2 && E >= 2 && (customAbs(A - E) <= 3) && D >= 3 && (A + E) > D) {
     soft_gamine_result = A + E + D;
   }
   soft_gamine_result = soft_gamine_result * 6.25;
