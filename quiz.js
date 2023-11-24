@@ -703,15 +703,11 @@ function calculateFlamboyantGamine(results_dict) {
 function calculateGamine(results_dict) {
   var A = results_dict["A"];
   var E = results_dict["E"];
-  var gamine_A = 0;
-  var gamine_E = 0;
-  for (let x = 1; x < 9; x++) {
-    if (x <= A && x <= E) {
-      gamine_A = gamine_A + 1;
-      gamine_E = gamine_E + 1;
-    }
+  var gamine_result = 0;
+  if (A == 8 && E == 8) {
+    gamine_result = 16;
   }
-  var gamine_result = gamine_A * 6.25 + gamine_E * 6.25;
+  gamine_result = gamine_result * 6.25;
   return gamine_result;
 }
 
@@ -723,7 +719,7 @@ function calculateSoftGamine(results_dict) {
   var D = results_dict["D"];
   var E = results_dict["E"];
   var soft_gamine_result = 0;
-  if (A > 2 && E > 2 && A - E < 3 && D > 2 && D < A) {
+  if (A > 2 && E > 2 && A - E < 3 && D >= 3) {
     soft_gamine_result = A + E + D;
   }
   soft_gamine_result = soft_gamine_result * 6.25;
