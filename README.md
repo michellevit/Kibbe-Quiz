@@ -1,8 +1,11 @@
 # Kibbe Quiz
 
+
 ![JavaScript](https://img.shields.io/badge/javascript-ES6+-yellow.svg)
 
+
 A quiz, with 16 questions and 13 possible results, which calculates the user's Kibbe Body Type.
+
 
 <a href="https://kibbebodytypes.com/quiz" target="_blank"><img src="https://img.shields.io/badge/Website-purple?style=for-the-badge&logo=javascript"></a>
 <a href="https://youtu.be/i5OJ-5s9mCA?si=_8uqQP9L8F4LMKB0" target="_blank"><img src="https://img.shields.io/badge/YouTube-Demo-red?style=for-the-badge&logo=youtube"></a>
