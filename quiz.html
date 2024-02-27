@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Quiz</title>
+</head>
+<body>
+    <div id="quiz">
+        <h1 id="appTitle">Quiz</h1>
+        <p>
+        <div id="question-box">
+            <h2 id='question'>Question 1</h2>
+        </div>
+        <p>
+        <button type="button" id="start" onclick="startQuiz()">Start</button>
+        <br class="buttonBreak">
+        <button type="button"  class="answer_button" id="A" onclick="recordAnswer(this.id)"><div class="answer_letter">A</div><div class="answer" id="answerA" ></div><div class="caption" id="captionA"></div></button>
+        <br class="buttonBreak">
+        <button type="button" class="answer_button" id="B" onclick="recordAnswer(this.id)"><div class="answer_letter">B</div><div class="answer" id="answerB"></div><div class="caption" id="captionB"></div></button>
+        <br class="buttonBreak">
+        <button type="button" class="answer_button" id="C" onclick="recordAnswer(this.id)"><div class="answer_letter">C</div><div class="answer" id="answerC"></div><div class="caption" id="captionC"></div></button>
+        <br class="buttonBreak">
+        <button type="button" class="answer_button" id="D" onclick="recordAnswer(this.id)"><div class="answer_letter">D</div><div class="answer" id="answerD"></div><div class="caption" id="captionD"></div></button>
+        <br class="buttonBreak">
+        <button type="button" class="answer_button" id="E" onclick="recordAnswer(this.id)"><div class="answer_letter">E</div><div class="answer" id="answerE"></div><div class="caption" id="captionE"></div></button>
+        <br class="buttonBreak">
+        <button type="button" id="back" onclick="backButtonPressed()">	&#8592 Back</button>
+        <br class="buttonBreak">
+        <div id="progress_bar"><div id="current_progress">0%</div></div>
+        <div id="result"></div>
+        <div id="chartBox">
+            <canvas id="myBarChart" width="700" height="500"></canvas>
+            <canvas id="myPieChart" width="300" height="300"></canvas>
+            <canvas id="myBarChart2" width="350" height="200"></canvas>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="text/javascript" src="quiz.js"></script>
+</body>
+</html>

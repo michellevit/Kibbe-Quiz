@@ -1,0 +1,223 @@
+body {
+    background-color: #E9DCD5 !important;
+}
+
+#quiz {
+    text-align: center !important;
+    font-family: "Maven Pro" !important;
+    text-transform: none !important;
+}
+
+#question {
+    font-size: x-large;
+    display: none !important;
+    padding: 0 10vw;
+    letter-spacing: 0.5px !important;
+}
+
+h1 {
+	text-align: center;
+}
+
+h4 {
+    font-size: small !important;
+    font-weight: 450 !important;
+    margin-top: 0  !important;
+    letter-spacing: 0.6px !important;
+    color: #666666 !important;
+}
+
+#question-box {
+    min-height: 85px;
+    margin-bottom: -15px;
+}
+
+#quiz #start {
+    width: 200px !important;
+    height: 75px !important;
+    text-align: center !important;
+    font-size: medium !important;
+    color: black !important;
+}
+
+#quiz button {
+    width: 560px !important;
+    height: 115px !important;
+    background-color:white !important;
+    margin: 10px !important;
+    border: none !important;
+    border: none !important;
+    font-family: "Maven Pro" !important;
+    text-transform: none !important;
+}
+
+
+#quiz button:hover {
+    opacity: 100%  !important;
+    background-color: #dbc4b8 !important;
+    border-color: black  !important;
+    border-width: 1px  !important;
+}
+
+.answer_button {
+    display: none;
+}
+
+button > .answer_letter {
+    font-weight: bold  !important;
+    text-align: left  !important;
+    font-size: 100px  !important;
+    color: #E9DCD5  !important;
+    opacity: 40%  !important;
+    position: absolute !important;
+    margin-top: -75px !important;
+    margin-bottom: auto !important;
+}
+
+button >.answer {
+    width: 525px !important;
+    padding-left: 75px !important;
+    padding-right: 75px !important;
+    text-align: center  !important;
+    color: black  !important;
+    font-weight: 500  !important;
+    font-size: medium  !important;
+    position: absolute;
+    margin-top: -18px  !important;
+    word-break: break-word !important;
+    white-space:normal !important;
+    letter-spacing: 2px;
+}
+
+button > .caption {
+    width: 525px  !important;
+    padding-left: 75px  !important;
+    padding-right: 75px  !important;
+    line-height: 15px;
+    text-align: center !important;
+    color: #989898  !important;
+    font-weight: 100  !important;
+    font-size: small   !important;
+    position: absolute  !important;
+    justify-content: center  !important;
+    word-break: break-word !important;
+    white-space:normal !important;
+    letter-spacing: 1px;
+    margin-top: 8px !important;
+}
+
+#quiz #back {
+    width: 80px !important;
+    height: 40px !important;
+    text-align: center !important;
+    padding: 5px !important;
+    opacity: 55% !important;
+    color: black !important;
+    display: none;
+} 
+
+#progress_bar {
+    width: 560px !important; /*same as button*/
+    height: 18px !important;
+    background-color: white !important;
+    opacity: 70% !important;
+    margin: auto !important;
+    margin-top: 30px !important;
+    display: none;
+}
+
+#current_progress {
+    width: 6.25px;
+    height: 18px !important;
+    background-color: #dbc4b8 !important;
+    opacity: 100% !important;
+    text-align: right !important;
+    color: white !important;
+    font-size: 12px !important;
+    font-weight: bold !important;
+    -webkit-transition:300ms linear !important;
+	-moz-transition:300ms linear !important;
+	-o-transition:300ms linear !important;
+	-ms-transition:300ms linear !important;
+	transition:300ms linear !important;
+    display: table-cell !important;
+    vertical-align: middle !important;
+}
+
+#chartBox {
+    width: 700px !important;
+    margin: auto !important;
+    display: none !important;
+}
+
+
+#myBarChart {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#myPieChart {
+    padding: 0 !important;
+    margin: auto !important;
+}
+
+#myBarChart2 {
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.inconclusive-text {
+    padding-left: 75px;
+    padding-right: 75px;
+    text-align: center;
+    font-weight: 500;
+    font-size: medium;
+    margin-top:  50px;
+    margin-bottom: 75px;
+    word-break: break-word;
+    white-space:normal;
+    letter-spacing: 2px;
+}
+
+
+
+@media only screen and (max-width: 615px) {
+    #quiz button {
+        padding-left: 0vw !important;
+        padding-right: 0vw !important;
+        padding-top: 1vw !important;
+        padding-bottom: 1vw !important;
+    }
+    button, #progress_bar {
+        max-width: 90vw !important;
+    }
+    button > .answer_letter {
+        font-weight: bold  !important;
+        font-size: 50px  !important;
+        padding-left: 8px !important;
+        padding-top: 10px !important;
+    }
+    button > .answer {
+        max-width: 90vw !important;
+        padding-left: 5vw !important;
+        padding-right: 5vw !important;
+        margin-top:  -10px !important;
+        word-break: break-word !important;
+        white-space:normal !important;
+        overflow:hidden !important;
+    }
+    button .caption {
+        width: 90vw !important;
+        padding-left: 2vw !important;
+        padding-right: 2vw !important;
+        letter-spacing: 0px !important; 
+        overflow:hidden !important;
+        font-size: x-small !important;
+    }
+    #question-box {
+       min-height: 110px;
+       margin: 0 -10px;
+    }
+
+}
+
