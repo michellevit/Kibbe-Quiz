@@ -1,14 +1,15 @@
 # Kibbe Quiz
 
 
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-yellow.svg)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-f0db4f.svg)
+![WordPress](https://img.shields.io/badge/WordPress-21759b.svg)
 
 
 A quiz, with 16 questions and 13 possible results, which calculates the user's Kibbe Body Type.
 
 
-<a href="https://kibbebodytypes.com/quiz" target="_blank"><img src="https://img.shields.io/badge/Website-purple?style=for-the-badge&logo=javascript"></a>
-<a href="https://youtu.be/9sR0VwgTKxE?si=WX_iA2JNViaKeJzW" target="_blank"><img src="https://img.shields.io/badge/YouTube-Demo-red?style=for-the-badge&logo=youtube"></a>
+<a href="https://kibbebodytypes.com/quiz" target="_blank"><img src="https://img.shields.io/badge/Website-ce7869?style=for-the-badge&logo=javascript"></a>
+<a href="https://youtu.be/9sR0VwgTKxE?si=WX_iA2JNViaKeJzW" target="_blank"><img src="https://img.shields.io/badge/YouTube-Demo-ff0000?style=for-the-badge&logo=youtube"></a>
 
 
 ## Table of Contents
