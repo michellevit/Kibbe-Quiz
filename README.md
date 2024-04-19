@@ -9,7 +9,7 @@
 A quiz, with 16 questions and 13 possible results, which calculates the user's Kibbe Body Type.
 
 
-<a href="https://kibbebodytypes.com/quiz" target="_blank"><img src="https://img.shields.io/badge/Website-E9DCD4?style=for-the-badge&logo=javascript"></a>
+<a href="https://kibbebodytypes.com/quiz" target="_blank"><img src="https://img.shields.io/badge/Website-E9DCD4?style=for-the-badge"></a>
 <a href="https://youtu.be/9sR0VwgTKxE?si=WX_iA2JNViaKeJzW" target="_blank"><img src="https://img.shields.io/badge/YouTube-Demo-ff0000?style=for-the-badge&logo=youtube"></a>
 
 
