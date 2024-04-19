@@ -2,7 +2,8 @@
 
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-ES6+-f0db4f.svg)
-![WordPress](https://img.shields.io/badge/WordPress-21759b.svg)
+![WordPress](https://img.shields.io/badge/WordPress-E9DCD4.svg)
+![DreamHost](https://img.shields.io/badge/DreamHost-0073EC.svg)
 
 
 A quiz, with 16 questions and 13 possible results, which calculates the user's Kibbe Body Type.
